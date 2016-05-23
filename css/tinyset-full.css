@@ -22,7 +22,7 @@ img, svg {
     height: auto;
 }
 
-body, nav, main, section, article, aside, header, footer, div, form, textarea, input {
+body, nav, main, section, article, aside, header, footer, div, form, textarea, input, ul, li, a, svg {
     box-sizing: inherit
 }
 
@@ -47,7 +47,6 @@ a:active, a:hover, input:focus, select:focus, textarea:focus, button:focus {
 textarea {
     overflow: auto
 }
-
 
 /* Typography */
 
@@ -314,6 +313,7 @@ i, em, .italic {
 @media (max-width: 40rem) {
 
     .sm-width-100 { width: 100% }
+    .sm-height-100 { min-height: 100vh }
 
     .sm-width-33  { width: 33.33% }
     .sm-width-66  { width: 66.66% }
@@ -335,6 +335,7 @@ i, em, .italic {
 @media (min-width: 40rem) {
 
     .lg-width-100 { width: 100% }
+    .lg-height-100 { min-height: 100vh }
 
     .lg-width-33  { width: 33.33% }
     .lg-width-66  { width: 66.66% }
