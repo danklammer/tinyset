@@ -351,6 +351,11 @@ i, em, .italic {
 .box-shadow-medium  { box-shadow: 0 1px 2px rgba(0, 0, 0, .3)  }
 .box-shadow-dark    { box-shadow: 0 1px 3px rgba(0, 0, 0, .4)  }
 
+.svg-shadow-light   { -webkit-filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .2)); filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .2)) }
+.svg-shadow-medium  { -webkit-filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .3)); filter: drop-shadow(0 1px 2px rgba(0, 0, 0, .3)) }
+.svg-shadow-dark    { -webkit-filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .4)); filter: drop-shadow(0 1px 3px rgba(0, 0, 0, .4)) }
+
+
 
 /* Hover Dim */
 
