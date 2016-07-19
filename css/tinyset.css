@@ -34,6 +34,8 @@ nav, main, section, article, aside, header, footer {
 button, input, select, textarea {
     color: inherit;
     font: inherit;
+    border: none;
+    outline: none;
     margin: 0;
 }
 
