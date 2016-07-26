@@ -23,7 +23,7 @@ img, svg {
     height: auto;
 }
 
-body, nav, main, section, article, aside, header, footer, div, form, textarea, input, ul, li, a, svg {
+body, nav, main, section, article, aside, header, footer, div, form, textarea, input, ul, li, a, img, svg {
     box-sizing: inherit
 }
 
