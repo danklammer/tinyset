@@ -14,20 +14,24 @@ html {
     box-sizing: border-box;
 }
 
-body {
+body, figure, figcaption {
     margin: 0;
 }
 
-img, svg {
+img {
     max-width: 100%;
     height: auto;
 }
 
-body, nav, main, section, article, aside, header, footer, div, form, textarea, input, ul, li, a, img, svg {
+svg {
+    max-width: 100%;
+}
+
+body, nav, main, section, article, aside, header, footer, figure, figcaption, div, form, textarea, input, ul, li, a, img, svg {
     box-sizing: inherit
 }
 
-nav, main, section, article, aside, header, footer {
+nav, main, section, article, aside, header, footer, figure, figcaption {
     display: block
 }
 
@@ -37,7 +41,7 @@ button, input, select, textarea {
     border: none;
     outline: none;
     margin: 0;
-    -webkit-appearance: none;
+    line-height: normal;
 }
 
 a {
@@ -72,6 +76,7 @@ i, em, .italic {
 .uppercase { text-transform: uppercase }
 
 .line-height-none { line-height: 1 }
+.line-height-slight { line-height: 1.25 }
 .line-height-title { line-height: 1.5 }
 .line-height-default { line-height: 1.75 }
 
@@ -107,7 +112,7 @@ i, em, .italic {
 
 .fit { max-width: 100% }
 .width-full { width: 100% }
-.height-full { min-height: 100vh }
+.height-full { height: 100vh }
 
 .left  { float: left }
 .right { float: right }
@@ -126,19 +131,26 @@ i, em, .italic {
 
 .align-middle {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .inline-block {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: top
 }
 
 .inline-block-middle {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: middle
+}
+
+.table { display: table }
+
+.table-cell-middle {
+    display: table-cell;
+    vertical-align: middle
 }
 
 .hide { display: none }
@@ -205,7 +217,7 @@ i, em, .italic {
 
 
 /* Margins  */
-
+.m0 { margin: 0      }
 .m1 { margin: .25rem }
 .m2 { margin: .5rem  }
 .m3 { margin: 1rem   }
@@ -272,6 +284,7 @@ i, em, .italic {
 
 /* Padding  */
 
+.p0 { padding: 0      }
 .p1 { padding: .25rem }
 .p2 { padding: .5rem  }
 .p3 { padding: 1rem   }
@@ -370,6 +383,7 @@ i, em, .italic {
 
 /* Opacity */
 
+.opacity-0 { opacity: 0   }
 .opacity-1 { opacity: 0.1 }
 .opacity-2 { opacity: 0.2 }
 .opacity-3 { opacity: 0.3 }
@@ -382,10 +396,12 @@ i, em, .italic {
 
 
 /* Shadows */
+.text-shadow-none   { text-shadow: none                        }
 .text-shadow-light  { text-shadow: 0 1px 2px rgba(0, 0, 0, .3) }
 .text-shadow-medium { text-shadow: 0 1px 4px rgba(0, 0, 0, .4) }
 .text-shadow-dark   { text-shadow: 0 1px 6px rgba(0, 0, 0, .5) }
 
+.box-shadow-none    { box-shadow: none                         }
 .box-shadow-light   { box-shadow: 0 1px 1px rgba(0, 0, 0, .2)  }
 .box-shadow-medium  { box-shadow: 0 1px 2px rgba(0, 0, 0, .3)  }
 .box-shadow-dark    { box-shadow: 0 1px 3px rgba(0, 0, 0, .4)  }
@@ -433,13 +449,16 @@ i, em, .italic {
     user-select: none;
 }
 
+.pointerevents-none { pointer-events: none }
+.appearance-none { -webkit-appearance: none }
+
 
 /* Media Queries */
 
 @media (max-width: 60rem) {
 
     .sm-width-100 { width: 100% }
-    .sm-height-full { min-height: 100vh }
+    .sm-height-full { height: 100vh }
 
     .sm-width-33  { width: 33.33% }
     .sm-width-66  { width: 66.66% }
@@ -453,12 +472,8 @@ i, em, .italic {
     .sm-width-60  { width: 60% }
     .sm-width-80  { width: 80% }
 
-    .sm-align-middle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+    .sm-table { display: table }
+    .sm-table-cell-middle { display: table-cell; vertical-align: middle }
 
     .sm-left { float: left }
     .sm-right { float: right }
@@ -475,7 +490,7 @@ i, em, .italic {
 @media (min-width: 60rem) {
 
     .lg-width-100 { width: 100% }
-    .lg-height-full { min-height: 100vh }
+    .lg-height-full { height: 100vh }
 
     .lg-width-33  { width: 33.33% }
     .lg-width-66  { width: 66.66% }
@@ -489,12 +504,8 @@ i, em, .italic {
     .lg-width-60  { width: 60% }
     .lg-width-80  { width: 80% }
 
-    .lg-align-middle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+    .lg-table { display: table }
+    .lg-table-cell-middle { display: table-cell; vertical-align: middle }
 
     .lg-left { float: left }
     .lg-right { float: right }
