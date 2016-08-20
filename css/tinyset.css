@@ -1,10 +1,10 @@
 
-/* TinySet.css                                  */
-/* -------------------------------------------- */
-/* A super small CSS reset with basic utilities */
+/* TinySet.css                             */
+/* --------------------------------------- */
+/* Minimal set of functional CSS utilities */
 
 
-/* Base Reset + Normalize + Box-sizing */
+/* Simple Reset + Box-sizing */
 
 html {
     -ms-text-size-adjust: 100%;

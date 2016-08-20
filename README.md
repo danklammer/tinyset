@@ -1,2 +1,4 @@
 # tinyset
-A super small CSS reset with basic utilities
+Minimal set of functional CSS utilities
+
+*Documentation coming soon...*
